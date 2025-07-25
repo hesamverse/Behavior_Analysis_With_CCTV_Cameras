@@ -61,19 +61,3 @@ class MBTIPredictor:
             self.dimensions["P/J"],
         ])
 
-
-# 🧪 Test example
-if __name__ == "__main__":
-    predictor = MBTIPredictor()
-
-    sample_features = {
-        'pause_duration': 45,
-        'product_touch_count': 6,
-        'product_return_count': 1,
-        'help_seeking_attempt': False,
-        'eye_contact_count': 0,
-        'wandering_ratio': 0.7
-    }
-
-    mbti_type = predictor.predict(sample_features)
-    print("Predicted MBTI:", mbti_type)
